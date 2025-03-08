@@ -29,7 +29,27 @@ app.get("/", (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port 127.0.0.1:${process.env.PORT}`);
 });
-app.get("/contact", (req, res) => {
+app.get("/page/contact", (req, res) => {
   res.render("contact");
 });
-
+app.get("/page/home", (req, res) => {
+  res.render("home");
+});
+app.get("/page/Blog", (req, res) => {
+  res.render("Blog");
+});
+app.get("/page/about", (req, res) => {
+  res.render("about");
+});
+app.get("/page/privacy-policy",(req,res)=>{
+  res.render("privacy-policy");
+});
+app.get("/page/FAQ",(req,res)=>{
+  res.render("FAQ");
+});
+app.get("/page/Terms_condition",(req,res)=>{
+  res.render("Terms_condition");
+});
+app.get("/page/Feedback",(req,res)=>{
+  res.render("Feedback");
+});
